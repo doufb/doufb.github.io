@@ -25,8 +25,8 @@ author:
   avatar           : "profile.png"
   name             : "Fubin Dou"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  bio              :
+  location         : "Hefei, China"
   employer         : "University of Science and Technology of China"
   uri              : # URL
   email            : "doufb@mail.ustc.edu.cn" 
