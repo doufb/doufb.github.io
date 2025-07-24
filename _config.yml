@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Fubin Dou / Home Page"
+title                    : "Fubin Dou"
 title_separator          : "-"
 name                     : &name "Fubin Dou"
 description              : &description "Home Page"
@@ -25,7 +25,7 @@ author:
   avatar           : "profile.png"
   name             : "Fubin Dou （窦富缤）"
   pronouns         : # example: "she/her"  
-  bio              :
+  bio              : "I am currently an undergraduate student at the University of Science and Technology of China (USTC).“
   location         : "Hefei, China"
   employer         : "University of Science and Technology of China"
   uri              : # URL
