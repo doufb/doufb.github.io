@@ -1,0 +1,114 @@
+% !TeX program = xelatex
+\documentclass[10.5pt,a4paper]{article}
+
+% ===== 中文与页面设置 =====
+\usepackage[UTF8]{ctex}
+\usepackage[margin=1.35cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+% ===== 简洁 CV 样式 =====
+\titleformat{\section}{\normalsize\bfseries}{}{0pt}{}[\vspace{-0.55em}\rule{\textwidth}{0.4pt}]
+\titlespacing*{\section}{0pt}{0.55em}{0.28em}
+\setlist[itemize]{leftmargin=1.15em, itemsep=0.08em, topsep=0.08em, parsep=0pt}
+
+
+\newcommand{\resumeSubheading}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \textit{#3} & \textit{#4} \\
+  \end{tabularx}\vspace{-0.15em}
+}
+
+\newcommand{\resumeExperience}[4]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    {\small #3} & {\small #4} \\
+  \end{tabularx}\vspace{0.10em}
+}
+
+\newcommand{\resumeProject}[3]{%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+  \end{tabularx}
+  {\small\textit{#3}}\vspace{0.12em}
+}
+
+\newcommand{\resumeParagraph}[1]{%
+  {\setlength{\parskip}{0pt}\linespread{1.08}\selectfont #1\par}\vspace{0.10em}
+}
+
+\begin{document}
+
+% ===== Header =====
+\begin{center}
+    {\LARGE \textbf{窦富缤}} \\
+    \vspace{0.25em}
+    Email: \href{mailto:doufb@mail.ustc.edu.cn}{doufb@mail.ustc.edu.cn}
+    \quad | \quad
+    Phone: +86 15522881185
+
+\end{center}
+\vspace{-0.6em}
+
+% ===== Education =====
+\section{教育背景}
+\resumeSubheading
+{中国科学技术大学，数学科学学院}{安徽，中国}
+{计算数学 本科}{2023年9月 -- 2027年6月（预计）}
+
+% ===== Honors =====
+\section{荣誉奖励}
+\begin{itemize}
+    \item 优秀学生奖学金，2025年
+\end{itemize}
+
+% ===== Research Interests =====
+\section{研究兴趣}
+\resumeParagraph{主要关注应用数学、人工智能、计算机视觉与计算机图形学的交叉问题，尤其是动态三维重建、神经渲染、物理约束的可变形建模、优化与反问题、科学计算及 AI4Science 等方向。}
+
+% ===== Publications =====
+\section{论文发表}
+\begin{itemize}
+    \item Haoqin Hong*, Ding Fan*, \textbf{Fubin Dou}, Zhi-Li Zhou, Haoran Sun, Congcong Zhu, Jingrun Chen. 
+    \textit{Physics-Informed Deformable Gaussian Splatting: Towards Unified Constitutive Laws for Time-Evolving Material Field}. 
+    Association for the Advancement of Artificial Intelligence (AAAI), 2026. \textbf{Accepted}.
+\end{itemize}
+
+% ===== Research Experience =====
+\section{科研经历}
+\resumeExperience
+{中国科学技术大学 SCAI Lab}{安徽，中国 \quad 2024年11月 -- 至今}
+{指导教师：陈景润教授（中国科学技术大学数学系）}{}
+\resumeParagraph{参与物理信息约束的可变形 3D Gaussian Splatting 框架研究，将连续介质力学引入动态场景重建；负责静态--动态解耦与动态掩码模块，分离运动前景和静态背景，缓解相机/物体运动耦合歧义，提升静态背景几何质量与动态前景运动一致性。}
+
+% ===== Academic Projects =====
+\section{项目}
+\resumeProject
+{可微物理驱动的弹簧质点系统与动态场景反向重建}{中国科学技术大学}
+\resumeParagraph{围绕可变形动态场景的物理建模与反向重建，构建基于弹簧质点系统的可微物理仿真框架，通过将仿真过程嵌入优化循环，从观测到的动态序列中反向估计场景状态与材料参数。项目将离散弹簧系统与连续介质力学联系起来，使用能量匹配方法把 Neo-Hookean 弹性能量拟合到离散拓扑中，估计杨氏模量与泊松比等物理参数，实现上结合 Taichi 搭建仿真与自动微分实验流程，利用可微渲染/物理损失对动态形变进行优化，为从视觉观测中恢复可变形物体的几何、运动和物理属性提供优化式方法。}
+
+% ===== Courses =====
+\section{相关课程}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}X}
+实分析（4.0） & 复分析（4.0） &  泛函分析（4.0） \\
+多变量微积分（4.0） & 数理统计（4.0） & 数值代数（4.0）
+\end{tabularx}
+
+% ===== Skills =====
+\section{技能}
+\begin{itemize}
+    \item \textbf{编程语言：}C, C++, Python, \LaTeX
+    \item \textbf{深度学习与科学计算：}PyTorch, Taichi, NumPy
+    \item \textbf{工具与平台：}Linux, Git
+\end{itemize}
+
+\end{document}
