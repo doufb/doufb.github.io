@@ -6,3 +6,10 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# Local homework report artifacts
+homework_report.*
+
+# CV source files kept locally
+cv_cn.tex
+cv_en.tex

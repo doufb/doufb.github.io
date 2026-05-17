@@ -1,0 +1,40 @@
+<% if (theme.mathjax) { %>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']],
+      processEscapes: true,
+      tags: 'ams'
+    },
+    options: {
+      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    chtml: {
+      matchFontHeight: false
+    },
+    startup: {
+      pageReady: function () {
+        return MathJax.startup.defaultPageReady().then(function () {
+          document.querySelectorAll('.math-display').forEach(function (item) {
+            item.classList.add('math-ready');
+            var math = item.querySelector('mjx-container[display="true"]');
+            if (!math) return;
+            math.style.transform = '';
+            math.style.height = '';
+            math.style.transformOrigin = 'center center';
+            var available = item.clientWidth - 4;
+            var width = math.scrollWidth || math.getBoundingClientRect().width;
+            if (width > available && available > 0) {
+              var scale = Math.max(available / width, 0.72);
+              math.style.transform = 'scale(' + scale + ')';
+              math.style.height = (math.getBoundingClientRect().height * scale) + 'px';
+            }
+          });
+        });
+      }
+    }
+  };
+</script>
+<script defer src="<%- url_for('/lib/mathjax/tex-chtml.js') %>"></script>
+<% } %>

@@ -1,0 +1,164 @@
+# Header
+nav:
+  home:
+    path: /
+    icon: mingcute:home-3-fill
+    text:
+      en: Home
+      zh: 首页
+  research:
+    path: /#research
+    icon: mingcute:science-fill
+    text:
+      en: Research
+      zh: 科研
+  publications:
+    path: /#publications
+    icon: mingcute:paper-fill
+    text:
+      en: Publications
+      zh: 论文
+  notes:
+    path: /#notes
+    icon: mingcute:notebook-fill
+    text:
+      en: Notes
+      zh: 笔记
+  cv:
+    path: /pdf/cv_en.pdf
+    icon: mingcute:idcard-fill
+    text:
+      en: CV
+      zh: 简历
+
+profile_name: Fubin Dou（窦富缤）
+profile_name_en: ''
+header_name: Fubin Dou
+profile_role:
+  en: Undergraduate in Computational Mathematics
+  zh: 计算数学本科生
+profile_affiliation:
+  en: School of Mathematical Sciences, University of Science and Technology of China
+  zh: 中国科学技术大学数学科学学院
+email: doufb@mail.ustc.edu.cn
+my_location:
+  en: Hefei, Anhui, China
+  zh: 中国安徽合肥
+cv_path: /pdf/cv_en.pdf
+cv_path_en: /pdf/cv_en.pdf
+cv_path_zh: /pdf/cv_cn.pdf
+cv_last_update_date: 2026
+show_featured_posts: false
+profile_intro:
+  en: >
+    I am an undergraduate student in computational mathematics at USTC. My interests lie at the intersection of applied mathematics,
+    artificial intelligence, computer vision, and computer graphics, with a current focus on dynamic 3D reconstruction, neural rendering,
+    physics-informed deformable modeling, optimization, inverse problems, scientific computing, and AI for Science.
+  zh: >
+    我是中国科学技术大学计算数学方向本科生，研究兴趣集中在应用数学、人工智能、计算机视觉与计算机图形学的交叉问题，
+    目前关注动态三维重建、神经渲染、物理约束的可变形建模、优化与反问题、科学计算及 AI4Science。
+
+research_interests:
+  - en: Dynamic 3D reconstruction
+    zh: 动态三维重建
+  - en: Neural rendering and 3D Gaussian Splatting
+    zh: 神经渲染与 3D Gaussian Splatting
+  - en: Physics-informed deformable modeling
+    zh: 物理约束的可变形建模
+  - en: Optimization and inverse problems
+    zh: 优化与反问题
+  - en: Scientific computing and AI4Science
+    zh: 科学计算与 AI4Science
+
+homepage_education:
+  - logo: /images/ustc-logo.svg
+    title:
+      en: B.S. in Computational Mathematics, USTC
+      zh: 中国科学技术大学，计算数学本科
+    meta:
+      en: Sep 2023 - Jun 2027 expected
+      zh: 2023年9月 - 2027年6月（预计）
+    text:
+      en: School of Mathematical Sciences, University of Science and Technology of China.
+      zh: 中国科学技术大学数学科学学院
+
+homepage_research:
+  - logo: /images/ustc-logo.svg
+    title: SCAI Lab, USTC
+    meta: Nov 2024 - Present
+    text:
+      en: "Advisor: Prof. Jingrun Chen."
+      zh: "指导教师：陈景润教授"
+
+homepage_publications:
+  - authors: Haoqin Hong*, Ding Fan*, Fubin Dou, Zhi-Li Zhou, Haoran Sun, Congcong Zhu, Jingrun Chen
+    title: "Physics-Informed Deformable Gaussian Splatting: Towards unified constitutive laws for time-evolving material fields."
+    meta: AAAI 2026 accepted
+    text: ""
+
+homepage_notes:
+  - title: Reconstruction and Simulation of Elastic Objects with Spring-Mass 3D Gaussians
+    label:
+      en: ECCV 2024 note
+      zh: ECCV 2024 笔记
+    date: 2025
+    link: /2025/08/07/spring-gaus/
+    text:
+      en: Notes on Spring-Gaus, a representation that combines 3D Gaussian Splatting with spring-mass dynamics for elastic object reconstruction and future-state simulation.
+      zh: 关于 Spring-Gaus 的阅读笔记，记录其如何结合 3D Gaussian Splatting 与弹簧质点动力学进行弹性物体重建和未来状态仿真。
+  - title: "PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos"
+    label:
+      en: Paper note
+      zh: 论文笔记
+    date: 2025
+    link: /2025/08/11/phystwin/
+    text:
+      en: Notes on physics-informed digital twins for deformable objects, covering generative shape priors, sparse-to-dense optimization, and appearance reconstruction.
+      zh: 关于可变形物体物理数字孪生的阅读笔记，涵盖生成式形状先验、由稀疏到致密的优化以及外观重建。
+
+year_align_center: false
+
+# favicon
+favicon: /favicon.ico
+
+# logo
+portrait: /images/logo.svg  # Your profile image here
+show_profile_image: false
+
+# links
+links:
+  Email:
+    link: mailto:doufb@mail.ustc.edu.cn
+    icon: mingcute:mail-fill
+  # You can add more links below using the format above.
+
+# analytics
+google_analytics:
+baidu_analytics:
+
+# mathjax
+fancybox: true
+
+# mathjax
+mathjax: true
+
+# echarts
+echarts: true
+
+# busuanzi
+busuanzi: true
+
+# mermaid
+mermaid:
+  enable: true
+  # Available themes: default | dark | forest | neutral
+  theme: default
+
+# giscus
+giscus:
+  enable:
+  repo:
+  repo_id:
+  category:
+  category_id:
+  mapping:
