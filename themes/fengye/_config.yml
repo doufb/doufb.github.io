@@ -102,7 +102,7 @@ homepage_notes:
       en: ECCV 2024 note
       zh: ECCV 2024 笔记
     date: 2025
-    link: /2025/08/07/spring-gaus/
+    link: /notes/spring-gaus/
     text:
       en: Notes on Spring-Gaus, a representation that combines 3D Gaussian Splatting with spring-mass dynamics for elastic object reconstruction and future-state simulation.
       zh: 关于 Spring-Gaus 的阅读笔记，记录其如何结合 3D Gaussian Splatting 与弹簧质点动力学进行弹性物体重建和未来状态仿真。
@@ -111,7 +111,7 @@ homepage_notes:
       en: Paper note
       zh: 论文笔记
     date: 2025
-    link: /2025/08/11/phystwin/
+    link: /notes/phystwin/
     text:
       en: Notes on physics-informed digital twins for deformable objects, covering generative shape priors, sparse-to-dense optimization, and appearance reconstruction.
       zh: 关于可变形物体物理数字孪生的阅读笔记，涵盖生成式形状先验、由稀疏到致密的优化以及外观重建。

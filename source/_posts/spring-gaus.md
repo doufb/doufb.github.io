@@ -1,6 +1,6 @@
 ---
 title: Reconstruction and Simulation of Elastic Objects with Spring-Mass 3D Gaussians
-date: 2025-08-07
+date: 2025-08-07 12:00:00 +0800
 author: Fubin Dou
 categories:
   - Reading Notes

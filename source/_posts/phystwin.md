@@ -1,6 +1,6 @@
 ---
 title: "PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos"
-date: 2025-08-11
+date: 2025-08-11 12:00:00 +0800
 author: Fubin Dou
 categories:
   - Reading Notes
